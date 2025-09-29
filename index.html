@@ -153,7 +153,8 @@
         // Note: The API_KEY is intentionally left blank. It will be provided by the Canvas environment at runtime.
         const API_KEY = ""; 
         
-        // Connect to the Socket.IO server running on the same host and port (http://localhost:3000)
+        // IMPORTANT: Once deployed to a public server (like Render),
+        // replace io() with your public server URL, e.g., io('https://your-app-name.onrender.com')
         const socket = io();
 
         // --- DOM Elements ---
